@@ -23,7 +23,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 cacheSolve <- function(x, ...) {
   
-  m <- x$getInvmatrix()              
+  mymat <- x$getInvmatrix()              
   if(!is.null(mymat)) {           ## if user had calculated the same matrix before
     message("we detected cached data and returned:")  
     return(mymat)                 ## it will return the old result (mymat) directly 
